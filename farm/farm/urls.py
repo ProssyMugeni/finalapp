@@ -22,9 +22,11 @@ from django.urls import path, include
 
 
 urlpatterns = [
+    path('api-auth/', include('rest_framework.urls')),
     path('admin/', admin.site.urls, name='admin'),
-#    path('jica/', include('django.contrib.auth.urls')),
-    path('', include('jica.urls')),
+#    path('api/', include('jica.views.urls')),
+     path('', include('frontend.urls')),
+     path('', include('jica.urls')),
     
     
 ]
