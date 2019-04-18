@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { HashRouter as Router, Route, Link, NavLink , Redirect} from 'react-router-dom';
 import ReactDOM from 'react-dom';
 
 function validate(loginId, password) {
@@ -102,8 +103,8 @@ class LoginForm extends Component {
         <span className={shouldMarkError('password') ? "error" : "hidden"}
         >invalid password</span>
           </div>
-          <div className="createAccount">
-          <button type="submit">Login</button>
+          <div className="btn btn-success btn-sm">
+          <button   className="btn btn-success btn-sm" type="submit">Login</button>
           </div>
           
           </form>

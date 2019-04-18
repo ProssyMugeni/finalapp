@@ -14,31 +14,31 @@ class OfficerDetailView(RetrieveAPIView):
 
 
 class FarmerListView(ListAPIView):
-    queryset=Officer.objects.all()
+    queryset=Farmer.objects.all()
     serializer_class = FarmerSerializer
 
 
 class FarmerDetailView(RetrieveAPIView):
-    queryset=Officer.objects.all()
+    queryset=Farmer.objects.all()
     serializer_class = FarmerSerializer
 
 
 class  SeasonListView(ListAPIView):
-    queryset=Officer.objects.all()
+    queryset=Season.objects.all()
     serializer_class = SeasonSerializer
 
 
 class SeasonDetailView(RetrieveAPIView):
-    queryset=Officer.objects.all()
+    queryset=Season.objects.all()
     serializer_class = SeasonSerializer
 
 
 class ReportListView(ListAPIView):
-    queryset=Officer.objects.all()
+    queryset=Report.objects.all()
     serializer_class = ReportSerializer
 
 
 class ReportDetailView(RetrieveAPIView):
-    queryset=Officer.objects.all()
+    queryset=Report.objects.all()
     serializer_class = ReportSerializer
  

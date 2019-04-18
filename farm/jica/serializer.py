@@ -10,7 +10,8 @@ class OfficerSerializer(serializers.ModelSerializer):
 class FarmerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Farmer
-        fields = ('name', 'district', 'subcounty', 'parish', 'village', 'gender', 'age', 'marriage_status', 'language', 'telephone', 'image', 'community_status', 'instructor_possibility', 'farm_area', 'crop_type', 'past_harvest')
+        fields = '__all__'
+        # fields = ('name', 'district', 'subcounty', 'parish', 'village', 'gender', 'age', 'Marriage_status', 'language', 'telephone', 'image', 'community_status', 'instructor_possibility', 'farm_area', 'crop_type', 'past_harvest')
 
 class SeasonSerializer(serializers.ModelSerializer):
     class Meta:
@@ -20,6 +21,6 @@ class SeasonSerializer(serializers.ModelSerializer):
 class ReportSerializer(serializers.ModelSerializer):
     class Meta:
         model = Report
-        fields = ('name', 'season', 'area', 'rice_type', 'sowing_date', 'sowing_type', 'planting_type', 'levelling', 'fertilizer', 'fertilizer1_type', 'fertilizer1_amount', 'fertilizer2_type',  'fertilizer2_amount', 'weed_condition', 'weed_weed_times', 'note', 'image_1', 'image_2', 'image_3')        
+        fields = ('name', 'season', 'area', 'rice_type', 'sowing_date', 'sowing_type', 'planting_type', 'levelling', 'fertilizer', 'fertilizer1_type', 'fertilizer1_amount', 'fertilizer2_type',  'fertilizer2_amount', 'weed_condition', 'total_weed_times', 'note', 'image_1', 'image_2', 'image_3')        
 
 
